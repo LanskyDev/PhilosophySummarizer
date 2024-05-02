@@ -1,0 +1,89 @@
+/**** RESET *****/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/**** STYLES ****/
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #211951;
+  color: white;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #9484ff;
+}
+
+.search-bar-container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 0.9rem;
+  border-radius: 2rem;
+  background-color: white;
+  transition: background 0.25s;
+  box-shadow: 5px 5px 1px #9484ff;
+}
+
+.search-bar-container:focus-within {
+  background: #e6e5e5;
+}
+
+.search-input {
+  font-size: 1rem;
+  margin-left: 0.9rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 200px;
+}
+
+.search-input::placeholder,
+.search-icon {
+ color: rgb(109, 108, 108);
+}
+
